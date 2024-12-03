@@ -12,3 +12,4 @@ plugins {
 
 rootProject.name = "advent-of-code-2024"
 include("day1", "day2")
+include("libs")

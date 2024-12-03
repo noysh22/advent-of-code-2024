@@ -11,6 +11,7 @@ repositories {
 }
 
 dependencies {
+    implementation(kotlin("stdlib"))
     constraints {
         // Define dependency versions as constraints
         implementation("org.apache.commons:commons-text:1.12.0")
