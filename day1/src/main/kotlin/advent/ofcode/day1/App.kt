@@ -1,6 +1,5 @@
 package advent.ofcode.day1
 
-import java.io.File
 import kotlin.math.abs
 
 fun processInput(input: String): Pair<List<Int>, List<Int>> {
