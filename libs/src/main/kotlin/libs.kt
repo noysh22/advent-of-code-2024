@@ -6,6 +6,14 @@ object ResourceLoader {
     fun loadResource(path: String): URL? {
         return javaClass.getResource(path)
     }
+
+    fun readAsString(path: String): String? {
+        return loadResource(path)?.readText()
+    }
+
+    fun readLines(path: String): String? {
+        return readAsString(path)?.lines()?.joinToString("")
+    }
 }
 
 // A simple extension function to get a copy of a list
