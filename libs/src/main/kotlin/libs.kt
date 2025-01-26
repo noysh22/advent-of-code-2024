@@ -11,8 +11,12 @@ object ResourceLoader {
         return loadResource(path)?.readText()
     }
 
-    fun readLines(path: String): String? {
+    fun readLinesAsString(path: String): String? {
         return readAsString(path)?.lines()?.joinToString("")
+    }
+
+    fun readLines(path: String): List<String>? {
+        return readAsString(path)?.lines()
     }
 }
 

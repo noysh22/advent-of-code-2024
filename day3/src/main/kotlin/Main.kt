@@ -46,7 +46,7 @@ fun part2(input: String): Long {
 fun main() {
     println("Day 3: Red-Nosed Reports")
 
-    val input = ResourceLoader.readLines("/day3input.txt")!!
+    val input = ResourceLoader.readLinesAsString("/day3input.txt")!!
 
     println("sum part1: ${part1(input)}")
     println("sum part2: ${part2(input)}")
